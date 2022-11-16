@@ -1,0 +1,35 @@
+*{
+    
+}
+
+body{
+    display: grid;
+    margin: 0;
+    background-color: bisque;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 10% 50% 10%;
+}
+
+footer{
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    bottom: 0px;
+    grid-template-rows: 50% 25% 25%;
+}
+
+footer, footer a{
+    color: white;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-link{
+    grid-row: 2/3;
+}
