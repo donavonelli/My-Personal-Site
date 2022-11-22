@@ -13,7 +13,7 @@ main{
     margin: 0;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 16% 30% 16% 10% 16% 12%; 
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -21,11 +21,14 @@ main{
 nav{
     position: relative;
     color: white;
+    height: 30px;
     width: 100%;
     background-color: black;
     grid-column: 1/4;
     grid-row: 4/5;
     /* margin-top: 15em; */
+    align-items: center;
+    padding-top: 10px;
 }
 
 nav a{
@@ -93,17 +96,21 @@ h1, h2, h3, h5, p, nav{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    height: 200px;
-    width: 50%;
+    height: 300px;
+    width: fit-content;
     border-radius: 15px;
     border-color: black;
     grid-row: 2/4;
     grid-column: 2/3;
+    border: black solid 5px;
+    z-index: 0;
 
 }
 
 #homepagePic{
+    z-index: 1;
     height: 300px;
+    border-radius: 10px;
     /* width: 100px; */
 }
 
@@ -113,8 +120,9 @@ h1, h2, h3, h5, p, nav{
 }
 
 #home-name{
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 2/3;
+    margin-top: 2em;
 }
 
 #intro-text{
@@ -128,33 +136,26 @@ h1, h2, h3, h5, p, nav{
 }
 
 #about-nav{
-    grid-row: 4/5;
-}
-
-#interest{
-    grid-row: 6/6;
-    grid-column: 1/2;
-}
-
-#hobby{
-    grid-row: 6/6;
-    grid-column: 3/3;
+    grid-row: 2;
 }
 
 #interest-content{
-    grid-row: 6/6;
+    margin-top: 5em;
+    grid-row: 2/6;
     grid-column: 1/2;
 }
 
 #hobby-content{
-    grid-row: 6/6;
+    margin-top: 5em;
+    grid-row: 2/6;
     grid-column: 3/3;
 }
 
 #about-image-container{
     grid-column: 2/3;
-    grid-row: 6/6;
+    grid-row: 2/6;
     display: grid;
+    grid-template-rows: 33% 33% 33%;
 }
 
 #about-image-1{
@@ -173,4 +174,31 @@ h1, h2, h3, h5, p, nav{
     grid-row: 3/4;
     height: 100px;
     width: 100px;
+}
+
+#journey-main{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 10% 80%; 
+    height: 100vh;
+}
+
+#journey-intro{
+    grid-row: 1/2;
+}
+
+#journey-nav{
+    grid-row: 2/3;
+    height: 30px;
+    padding-top: 10px;
+}
+
+#journey-dropdown-1{
+    grid-row: 3/4;
+}
+
+ul{
+    position: absolute;
+    margin-right: 250px;
 }
