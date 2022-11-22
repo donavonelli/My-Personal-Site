@@ -78,7 +78,7 @@ a{
     transform: translateY(4px);
   }
 
-h1, h2, h3, p, nav{
+h1, h2, h3, h5, p, nav{
     text-align: center;
 }
 
@@ -107,7 +107,7 @@ h1, h2, h3, p, nav{
     /* width: 100px; */
 }
 
-#intro{
+.intro{
     grid-row: 1/4;
     grid-column: 2/3;
 }
@@ -125,4 +125,52 @@ h1, h2, h3, p, nav{
 #home-body{
     grid-row: 6/6;
     grid-column: 2/3;
+}
+
+#about-nav{
+    grid-row: 4/5;
+}
+
+#interest{
+    grid-row: 6/6;
+    grid-column: 1/2;
+}
+
+#hobby{
+    grid-row: 6/6;
+    grid-column: 3/3;
+}
+
+#interest-content{
+    grid-row: 6/6;
+    grid-column: 1/2;
+}
+
+#hobby-content{
+    grid-row: 6/6;
+    grid-column: 3/3;
+}
+
+#about-image-container{
+    grid-column: 2/3;
+    grid-row: 6/6;
+    display: grid;
+}
+
+#about-image-1{
+    grid-row: 1/2;
+    height: 100px;
+    width: 100px;
+}
+
+#about-image-2{
+    grid-row: 2/3;
+    height: 100px;
+    width: 100px;
+}
+
+#about-image-3{
+    grid-row: 3/4;
+    height: 100px;
+    width: 100px;
 }
