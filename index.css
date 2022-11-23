@@ -210,3 +210,73 @@ ul{
     position: absolute;
     margin-right: 250px;
 }
+
+#hashlink-1 {
+    display: none;
+}
+  
+#hashlink-1:target {
+    display: block;
+}
+
+#hashLink-2 {
+    display: none;
+}
+  
+#hashLink-2:target {
+    display: block;
+}
+
+#hashLink-3 {
+    display: none;
+}
+  
+#hashLink-3:target {
+    display: block;
+}
+
+#test{
+    grid-column: 2/3;
+    grid-row: 3;
+    z-index: 2;
+    margin-bottom: 5em;
+}
+
+#test2{
+    grid-row: 3;
+    margin-top: 2em;
+}
+
+#test3{
+    grid-row: 3;
+    margin-top: 5em;
+}
+
+#journey-timeline{
+    height: 575px;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 3em;
+}
+
+details{
+    z-index: 1;
+}
+
+#hash-1-initiator{
+    grid-column: 1;
+    grid-row: 3;
+    z-index: 2;
+    margin-left: 1em;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 6em;
+    font-size: 24px;
+}
+
+.journey-pics{
+    height: 100px;
+    width: 100px;
+}
