@@ -1,7 +1,4 @@
-*{
-    
-}
-
+/* Universal Styling */
 body{
     margin: 0;
     background-color: bisque;
@@ -26,7 +23,6 @@ nav{
     background-color: black;
     grid-column: 1/4;
     grid-row: 4/5;
-    /* margin-top: 15em; */
     align-items: center;
     padding-top: 10px;
 }
@@ -54,6 +50,18 @@ a{
     color: black;
 }
 
+h4{
+    font-size: 40px;
+}
+
+h5{
+    font-size: 32px;
+}
+
+p{
+    font-size: 22px;
+}
+
 .footer-link{
     grid-row: 2/3;
 }
@@ -64,7 +72,6 @@ a{
     text-align: center;
     cursor: pointer;
     outline: none;
-    /* color: black; */
     background-color: white;
     border: none;
     border-radius: 15px;
@@ -81,7 +88,7 @@ a{
     transform: translateY(4px);
   }
 
-h1, h2, h3, h5, p, nav{
+h1, h2, h3,h4, h5, p, nav{
     text-align: center;
 }
 
@@ -90,6 +97,21 @@ h1, h2, h3, h5, p, nav{
     color: white;
     margin-left: 12em;
 }
+
+.intro{
+    grid-row: 1/4;
+    grid-column: 2/3;
+    font-size: 60px;
+}
+
+#intro-text{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+
+
+/* Homepage styles */
 
 #home-image-container{
     display: block;
@@ -114,26 +136,24 @@ h1, h2, h3, h5, p, nav{
     /* width: 100px; */
 }
 
-.intro{
-    grid-row: 1/4;
-    grid-column: 2/3;
-}
-
 #home-name{
     grid-row: 3/4;
     grid-column: 2/3;
-    margin-top: 2em;
-}
-
-#intro-text{
-    grid-row: 5/6;
-    grid-column: 2/3;
+    margin-top: 1.5em;
+    font-size: 48px;
 }
 
 #home-body{
-    grid-row: 6/6;
-    grid-column: 2/3;
+    grid-row: 5;
+    grid-column: 1/4;
+    margin-top: 4em;
 }
+
+#welcome{
+    font-size: 48px;
+}
+
+/* About Me styles */
 
 #about-nav{
     grid-row: 2;
@@ -141,14 +161,22 @@ h1, h2, h3, h5, p, nav{
 
 #interest-content{
     margin-top: 5em;
+    margin-left: 1em;
     grid-row: 2/6;
     grid-column: 1/2;
+    border: black solid 5px;
+    border-radius: 20px;
+    height: fit-content;
 }
 
 #hobby-content{
-    margin-top: 5em;
+    margin-top: 4.5em;
+    margin-right: 1em;
     grid-row: 2/6;
     grid-column: 3/3;
+    border: black solid 5px;
+    border-radius: 20px;
+    height: fit-content;
 }
 
 #about-image-container{
@@ -158,6 +186,8 @@ h1, h2, h3, h5, p, nav{
     grid-template-rows: 33% 33% 33%;
     justify-content: center;
     height: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #about-image-1{
@@ -181,19 +211,23 @@ h1, h2, h3, h5, p, nav{
 }
 
 #about-footer{
-    bottom: -50em;
+    bottom: -52em;
 }
+
+/* Journey page styles */
 
 #journey-main{
     display: grid;
     margin: 0;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 10% 10% 80%; 
+    grid-template-rows: 10% 5% 80%; 
     height: 100vh;
 }
 
 #journey-intro{
     grid-row: 1/2;
+    font-size: 44px;
+    margin-right: 4em;
 }
 
 #journey-nav{
@@ -206,10 +240,6 @@ h1, h2, h3, h5, p, nav{
     grid-row: 3/4;
 }
 
-ul{
-    position: absolute;
-    margin-right: 250px;
-}
 
 #hashlink-1 {
     display: none;
@@ -219,27 +249,26 @@ ul{
     display: block;
 }
 
-#hashLink-2 {
+#hashlink-2 {
     display: none;
 }
   
-#hashLink-2:target {
+#hashlink-2:target {
     display: block;
 }
 
-#hashLink-3 {
+#hashlink-3 {
     display: none;
 }
   
-#hashLink-3:target {
+#hashlink-3:target {
     display: block;
 }
 
 #test{
-    grid-column: 2/3;
-    grid-row: 3;
+    grid-column: 1/4;
+    grid-row: 2;
     z-index: 2;
-    margin-bottom: 5em;
 }
 
 #test2{
@@ -259,24 +288,34 @@ ul{
     margin-top: 3em;
 }
 
-details{
-    z-index: 1;
-}
-
-#hash-1-initiator{
-    grid-column: 1;
-    grid-row: 3;
-    z-index: 2;
-    margin-left: 1em;
-    color: white;
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
-    top: 6em;
-    font-size: 24px;
-}
-
 .journey-pics{
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
+    grid-row: 1/2;
+}
+
+#journey-content{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns:33% 34% 33% ;
+}
+
+
+
+.closer{
+    display: block;
+    padding: 7px 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 1em;
+    margin-left: 45%;
+    width: fit-content;
 }
